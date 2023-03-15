@@ -6,12 +6,8 @@ import Posts from './funciones/Posts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
   <div>
     <App/>
-  </div>
-  <div>
     <Posts/>
   </div>
-  </>
 ); 

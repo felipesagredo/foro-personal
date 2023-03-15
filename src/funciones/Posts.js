@@ -5,6 +5,7 @@ import '../estilos/App.css';
 function Posts() {
   const [combinedData, setCombinedData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  
 
   useEffect(() => {
     const fetchData = async () => {

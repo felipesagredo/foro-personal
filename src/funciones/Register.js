@@ -1,47 +1,54 @@
 import React, { useState } from "react";
-
+import styles from '../estilos/App.css';
 const Register = ({ handleRegister }) => {
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 const [confirmPassword, setConfirmPassword] = useState("");
 
 const handleSubmit = (event) => {
-event.preventDefault();
-if (password === confirmPassword) {
-handleRegister(username, password);
-} else {
-alert("Passwords do not match!");
-}
+    event.preventDefault();
+    if (password === confirmPassword) {
+        handleRegister(username, password);
+    } else {
+        alert("Passwords do not match!");
+    }
 };
 
 return (
-<form onSubmit={handleSubmit}>
-<label>
-Username:
-<input
-type="text"
-value={username}
-onChange={(e) => setUsername(e.target.value)}
-/>
-</label>
-<label>
-Password:
-<input
-type="password"
-value={password}
-onChange={(e) => setPassword(e.target.value)}
-/>
-</label>
-<label>
-Confirm Password:
-<input
-type="password"
-value={confirmPassword}
-onChange={(e) => setConfirmPassword(e.target.value)}
-/>
-</label>
-<button type="submit">Register</button>
+    <div className="register-contenedor-0">
+
+    
+<form className="register-contenedor-1" onSubmit={handleSubmit}>
+    <h2>Registrate Aquí</h2>
+    <label>
+        Nuevo Usuario:
+        <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+        />
+        </label>
+
+    <label>
+        Contraseña:
+        <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+        />
+    </label>
+
+    <label>
+        Confirmar Contraseña:
+        <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+        />
+    </label>
+<button type="submit">Registrar</button>
 </form>
+</div>
 );
 };
 

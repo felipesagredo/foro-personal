@@ -16,10 +16,10 @@ const [stories, setStories] = useState([]);
 const handleLogin = (username, password) => {
 // check username and password
 if (username === "exampleuser" && password === "password") {
-setLoggedIn(true);
-setUser(username);
+  setLoggedIn(true);
+  setUser(username);
 } else {
-alert("Invalid username or password!");
+  alert("Invalid username or password!");
 }
 };
 
@@ -36,20 +36,20 @@ setStories([...stories, newStory]);
 
 return (
 <div>
-{loggedIn ? (
-<>
-<Navbar user={user} />
-<Feed stories={stories} />
-<Profile user={user} stories={stories} />
-<Search stories={stories} />
-<CreateStory onCreateStory={handleCreateStory} />
-</>
-) : (
-<>
-<Login handleLogin={handleLogin} />
-<Register handleRegister={handleRegister} />
-</>
-)}
+  {loggedIn ? (
+  <>
+    <Navbar user={user} />
+    <Feed stories={stories} />
+    <Profile user={user} stories={stories} />
+    <Search stories={stories} />
+    <CreateStory onCreateStory={handleCreateStory} />
+  </>
+  ) : (
+  <>
+    <Login handleLogin={handleLogin} />
+    <Register handleRegister={handleRegister} />
+  </>
+  )}
 </div>
 );
 };

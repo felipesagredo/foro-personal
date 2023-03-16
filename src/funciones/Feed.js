@@ -1,4 +1,5 @@
 import React from 'react';
+import '../estilos/EstiloPerfil.css';
 
 function Feed(props) {
   const stories = props.stories.map(story => (
@@ -9,7 +10,7 @@ function Feed(props) {
   ));
 
   return (
-    <div>
+    <div className='feed_contenedor_1'>
       {stories}
       <button onClick={props.onLoadMore}>Ver más historias</button>
     </div>

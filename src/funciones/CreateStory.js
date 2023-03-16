@@ -29,7 +29,7 @@ const CreateStory = ({ onCreateStory }) => {
   };
 
   return (
-    <div>
+    <div className="cstory_contenedor_1">
       <h2>Crear historia</h2>
       <form onSubmit={handleSubmit}>
         <label>

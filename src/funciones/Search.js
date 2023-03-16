@@ -29,7 +29,7 @@ class Search extends React.Component {
       this.props.stories;
 
     return (
-      <div>
+      <div className='search_contenedor_1'>
         <form>
           <input type="text" placeholder="Buscar historias" value={this.state.searchTerm} onChange={this.handleInputChange} />
         </form>

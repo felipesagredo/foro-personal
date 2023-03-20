@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
   }
-  
+
+.contenedor_main{
+    background-color: aliceblue;
+    display: grid;
+    flex-direction: column;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;

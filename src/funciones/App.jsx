@@ -7,6 +7,7 @@ import Search from "./Search";
 import CreateStory from "./CreateStory";
 import Login from "./Login";
 import Register from "./Register";
+import Story from './Story';
 
 const App = () => {
 const [loggedIn, setLoggedIn] = useState(false);
@@ -15,7 +16,7 @@ const [stories, setStories] = useState([]);
 
 const handleLogin = (username, password) => {
 // check username and password
-if (username === "exampleuser" && password === "password") {
+if (username === "fsdts" && password === "password") {
   setLoggedIn(true);
   setUser(username);
 } else {
@@ -37,13 +38,14 @@ setStories([...stories, newStory]);
 return (
 <div>
   {loggedIn ? (
-  <>
+  <div className='contenedor_main'>
     <Navbar user={user} />
-    <Feed stories={stories} />
+    <CreateStory onCreateStory={handleCreateStory} />
+    <Story/>
     <Profile user={user} stories={stories} />
     <Search stories={stories} />
-    <CreateStory onCreateStory={handleCreateStory} />
-  </>
+    <Feed stories={stories} />
+  </div>
   ) : (
   <>
     <Login handleLogin={handleLogin} />

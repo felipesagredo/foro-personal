@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from '../estilos/App.css';
+
+
 const Register = ({ handleRegister }) => {
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");

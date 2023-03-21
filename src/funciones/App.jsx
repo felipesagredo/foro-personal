@@ -7,7 +7,6 @@ import Search from "./Search";
 import CreateStory from "./CreateStory";
 import Login from "./Login";
 import Register from "./Register";
-import Story from './Story';
 
 const App = () => {
 const [loggedIn, setLoggedIn] = useState(false);
@@ -39,18 +38,17 @@ return (
 <div>
   {loggedIn ? (
   <div className='contenedor_main'>
-    <Navbar user={user} />
+    <Navbar usuario={stories} />
     <CreateStory onCreateStory={handleCreateStory} />
-    <Story/>
+    <Search user={user} stories={stories} />
     <Profile user={user} stories={stories} />
-    <Search stories={stories} />
-    <Feed stories={stories} />
+    <Feed user={user} stories={stories} />
   </div>
   ) : (
-  <>
+  <div className='contenedor_login_register'>
     <Login handleLogin={handleLogin} />
     <Register handleRegister={handleRegister} />
-  </>
+  </div>
   )}
 </div>
 );

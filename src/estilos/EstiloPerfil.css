@@ -1,12 +1,16 @@
 .stories_1{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(180, 180, 180);
     margin: 0 auto;
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
 }
 
 .navbar_contenedor_1{
@@ -32,30 +36,11 @@
 }
 
 .feed_contenedor_0{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-.feed_contenedor_1{
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .perfil_contenedor{
@@ -72,7 +57,7 @@
 
 
 .story_contenedor_1{
-    background-color: rgb(255, 255, 255);   padding: 30px;
+    background-color: rgb(53, 203, 244);   padding: 30px;
     margin: 0 auto;
     width: 50%;
     padding: 10px;

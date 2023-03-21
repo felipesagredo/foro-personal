@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 const CreateStory = ({ onCreateStory }) => {
+  
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(null);
+  const [imageUrl, setImageUrl] = useState("");
   const [privacy, setPrivacy] = useState("public");
 
   const handleTitleChange = (e) => {
@@ -15,7 +16,7 @@ const CreateStory = ({ onCreateStory }) => {
   };
 
   const handleImageChange = (e) => {
-    setImage(e.target.files[0]);
+    setImageUrl(URL.createObjectURL(e.target.files[0]));
   };
 
   const handlePrivacyChange = (e) => {
@@ -24,7 +25,7 @@ const CreateStory = ({ onCreateStory }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const story = { title, description, image, privacy };
+    const story = { title, description, imageUrl, privacy };
     onCreateStory(story);
   };
 

@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+.contenedor_login_register{
+    background-color: blueviolet;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;

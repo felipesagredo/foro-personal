@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from '../estilos/App.css';
+import '../estilos/App.css';
 
 const Login = ({ handleLogin }) => {
 const [username, setUsername] = useState("");

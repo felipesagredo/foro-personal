@@ -1,21 +1,25 @@
 import React from 'react';
 import '../estilos/EstiloPerfil.css';
+import Story from './Story';
 
 function Feed(props) {
   const stories = props.stories.map(story => (
-    <div className='stories_1' key={story.id}>
-      <p>{story.title}</p>
-      <img src={story.imageUrl} alt={story.description} />
-      <p>{story.description}</p>
+
+    <div className='stories_1' key={story.id}> 
+      <Story 
+      key={story.id}
+      title={story.title} 
+      imageUrl={story.imageUrl} 
+      description={story.description} 
+      privacy={story.privacy}
+      />
     </div>
   ));
 
   return (
     <div className='feed_contenedor_0'>
-      <div className='feed_contenedor_1'>
         {stories}
         <button onClick={props.onLoadMore}>Ver más historias</button>
-      </div>
     </div>
   );
 }

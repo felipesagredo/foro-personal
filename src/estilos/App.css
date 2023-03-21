@@ -1,42 +1,70 @@
 .login-contenedor-0{
-  background-color: rgb(12, 171, 186);
+  background-color: rgb(104, 151, 155);
   display: flex;
+  flex-direction: column;
   margin: auto;
   margin-bottom: 10px;
-  width: 30%;
+  width: 650px;
   height: fit-content;
 }
 
 .register-contenedor-0{
-  background-color: rgb(12, 171, 186);
+  background-color: rgb(104, 151, 155);
   display: flex;
+  flex-direction: column;
+  
   margin: auto;
   margin-bottom: 10px;
-  width: 30%;
+  width: 650px;
   height: fit-content;
 }
 
 .login-contenedor-1{
   background-color: rgba(255, 255, 255, 0.963);
   text-align: center;
+  justify-content: left;
   padding: 10px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 50%;
+  width: min-content;
   border-radius: 20px;
 }
 
 .register-contenedor-1{
   background-color: rgba(255, 255, 255, 0.963);
-  text-align: center;
+  text-align: left;
   padding: 10px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 50%;
+  width: min-content;
   border-radius: 20px;
 }
+
+.login-contenedor-1 input{
+  margin: 10px;
+  height: 25px;
+}
+
+.login-contenedor-1 button{
+  height: 30px;
+  font-size: 20px;
+}
+
+.register-contenedor-1 input{
+  border-style: groove;
+  margin: 10px;
+  height: 25px;
+}
+
+.register-contenedor-1 button{
+  height: 30px;
+  font-size: 20px;
+}
+
+
+
 
 
 .login-contenedor-1 label{
@@ -48,7 +76,7 @@
 
 .login-contenedor-1 input{
   color: black;
-  font-size: 10px;
+  font-size: 24px;
 }
 
 .register-contenedor-1 label{

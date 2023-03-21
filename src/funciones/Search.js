@@ -33,7 +33,6 @@ class Search extends React.Component {
         <form>
           <input type="text" placeholder="Buscar historias" value={this.state.searchTerm} onChange={this.handleInputChange} />
         </form>
-        <Feed stories={stories} />
       </div>
     );
   }

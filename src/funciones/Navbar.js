@@ -9,7 +9,6 @@ function Navbar(props) {
         <li>Explorar</li>
         <li>Perfil</li>
       </ul>
-      <button onClick={props.onCreateNewStory}>Nuevas Historias</button>
     </nav>
     </div>
   );

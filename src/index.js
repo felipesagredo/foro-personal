@@ -5,7 +5,7 @@ import App from './funciones/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <div className='contenedor_legendario'>
     <App/>
   </div>
 ); 

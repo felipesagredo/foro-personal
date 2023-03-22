@@ -1,5 +1,4 @@
 import React from 'react';
-import Feed from './Feed';
 
 class Search extends React.Component {
   constructor(props) {
@@ -29,8 +28,8 @@ class Search extends React.Component {
       this.props.stories;
 
     return (
-      <div className='search_contenedor_1'>
-        <form>
+      <div className='search_contenedor_0'>
+        <form className='search_contenedor_1'>
           <input type="text" placeholder="Buscar historias" value={this.state.searchTerm} onChange={this.handleInputChange} />
         </form>
       </div>

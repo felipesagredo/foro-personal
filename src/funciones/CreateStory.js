@@ -30,32 +30,20 @@ const CreateStory = ({ onCreateStory }) => {
   };
 
   return (
-    <div className="cstory_contenedor_1">
+    <div className="cstory_contenedor_0">
       <h2>Crear historia</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Título:
-          <input type="text" value={title} onChange={handleTitleChange} />
-        </label>
-        <br />
-        <label>
-          Descripción:
+      <form className="cstory_contenedor_1" clas onSubmit={handleSubmit}>
+          <p>Título:</p>
+        <input type="text" value={title} onChange={handleTitleChange} />        
+          <p>Descripción:</p>
           <textarea value={description} onChange={handleDescriptionChange} />
-        </label>
-        <br />
-        <label>
-          Imagen o video:
+          <p>Imagen o video:</p>
           <input type="file" accept="image/*, video/*" onChange={handleImageChange} />
-        </label>
-        <br />
-        <label>
-          Privacidad:
+          <p>Privacidad:</p>
           <select value={privacy} onChange={handlePrivacyChange}>
             <option value="public">Público</option>
             <option value="private">Privado</option>
           </select>
-        </label>
-        <br />
         <button type="submit">Publicar</button>
       </form>
     </div>

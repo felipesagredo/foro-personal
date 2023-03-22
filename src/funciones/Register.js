@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from '../estilos/App.css';
+import '../estilos/App.css';
 
 
 const Register = ({ handleRegister }) => {
@@ -17,11 +17,10 @@ const handleSubmit = (event) => {
 };
 
 return (
-    <div className="register-contenedor-0">
-
+<div className="register-contenedor-0">
+    <h2>Registrate Aquí</h2>
     
 <form className="register-contenedor-1" onSubmit={handleSubmit}>
-    <h2>Registrate Aquí</h2>
     <label>
         Nuevo Usuario:
         <input

@@ -37,7 +37,7 @@ setStories([...stories, newStory]);
 return (
 <div>
   {loggedIn ? (
-  <div className='contenedor_main'>
+  <div className='app_contenedor_main'>
     <Navbar usuario={stories} />
     <CreateStory onCreateStory={handleCreateStory} />
     <Search user={user} stories={stories} />
@@ -45,7 +45,7 @@ return (
     <Feed user={user} stories={stories} />
   </div>
   ) : (
-  <div className='contenedor_login_register'>
+  <div className='app_contenedor_login_register'>
     <Login handleLogin={handleLogin} />
     <Register handleRegister={handleRegister} />
   </div>

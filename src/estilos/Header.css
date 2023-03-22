@@ -3,14 +3,14 @@
     justify-content: center;
   }
 
-.contenedor_main{
-    background-color: aliceblue;
+.app_contenedor_main{
+    background-color: rgb(24, 134, 230);
     display: grid;
     flex-direction: column;
 }
 
-.contenedor_login_register{
-    background-color: blueviolet;
+.app_contenedor_login_register{
+    background-color: rgb(224, 239, 255);
 }
 
 .menu {

@@ -3,37 +3,55 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 10px;
   width: 650px;
+  margin-bottom: 10px;
   height: fit-content;
+}
+.login-contenedor-1{
+  background-color: rgba(255, 255, 255, 0.963);
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: min-content;
+  border-radius: 20px;
+}
+.login-contenedor-0 h2{
+  text-align: center;
+}
+.login-contenedor-1 label{
+  color: black;
+  font-size: 24px;
+}
+.login-contenedor-1 input{
+  margin: 10px;
+  height: 25px;
+  color: black;
+  font-size: 24px;
+}
+.login-contenedor-1 button{
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
 }
 
 .register-contenedor-0{
   background-color: rgb(104, 151, 155);
   display: flex;
   flex-direction: column;
-  
   margin: auto;
-  margin-bottom: 10px;
   width: 650px;
+  margin-bottom: 10px;
   height: fit-content;
 }
-
-.login-contenedor-1{
-  background-color: rgba(255, 255, 255, 0.963);
-  text-align: center;
-  justify-content: left;
-  padding: 10px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: min-content;
-  border-radius: 20px;
-}
-
 .register-contenedor-1{
   background-color: rgba(255, 255, 255, 0.963);
-  text-align: left;
   padding: 10px;
   margin: auto;
   margin-top: 10px;
@@ -41,54 +59,28 @@
   width: min-content;
   border-radius: 20px;
 }
-
-.login-contenedor-1 input{
-  margin: 10px;
-  height: 25px;
+.register-contenedor-0 h2{
+  text-align: center;
 }
-
-.login-contenedor-1 button{
-  height: 30px;
-  font-size: 20px;
-}
-
-.register-contenedor-1 input{
-  border-style: groove;
-  margin: 10px;
-  height: 25px;
-}
-
-.register-contenedor-1 button{
-  height: 30px;
-  font-size: 20px;
-}
-
-
-
-
-
-.login-contenedor-1 label{
-  
-  color: black;
-  font-size: 24px;
-}
-
-
-.login-contenedor-1 input{
-  color: black;
-  font-size: 24px;
-}
-
 .register-contenedor-1 label{
-  
   color: black;
   font-size: 24px;
 }
-
-
 .register-contenedor-1 input{
+  margin: 10px;
+  height: 25px;
   color: black;
-  font-size: 15px;
+  font-size: 24px;
+}
+.register-contenedor-1 button{
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  width: fit-content;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
 }
 
 .matriz {
@@ -100,15 +92,6 @@
   margin: 0 auto; /*   *para centrar el grid*   */
 }
 
-.elemento {
-  background-color: rgb(52, 73, 94);
-  border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  padding: 0%;
-  text-align: center;
-  font-size: 18px;
-}
-
 @media only screen and (max-width: 1024px) {
 
   .login-contenedor-0{
@@ -118,8 +101,7 @@
     margin-bottom: 10px;
     width: 100%;
     height: fit-content;
-  }
-  
+  } 
   .register-contenedor-0{
     background-color: rgb(12, 171, 186);
     display: flex;
@@ -129,11 +111,4 @@
     height: fit-content;
   }
 
-}
-
-.contenedorMain {
-  display: grid;
-  place-content: center;
-  align-items: center;
-  text-align: center;
 }

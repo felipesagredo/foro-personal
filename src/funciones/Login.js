@@ -12,8 +12,8 @@ const handleSubmit = (event) => {
 
 return (
     <div className="login-contenedor-0">
+        <h2>Inicia Sesión</h2>
         <form className="login-contenedor-1" onSubmit={handleSubmit}>
-            <h2>Inicia Sesión</h2>
             <label>
                 Usuario:
                 <input 

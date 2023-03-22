@@ -38,7 +38,7 @@ return (
 <div>
   {loggedIn ? (
   <div className='app_contenedor_main'>
-    <Navbar usuario={stories} />
+    <Navbar user={user} />
     <CreateStory onCreateStory={handleCreateStory} />
     <Search user={user} stories={stories} />
     <Profile user={user} stories={stories} />

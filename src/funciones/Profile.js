@@ -6,6 +6,7 @@ function Profile(props) {
   return (
     <div className='perfil_contenedor_0'>
       <div className="perfil_contenedor_1">
+      <h2>Perfil</h2>
         <h1>Usuario: {props.user}</h1>
         <p>Biografia: {props.description}</p>
         <p>Cantidad de seguidores: [ {props.followers}]</p>

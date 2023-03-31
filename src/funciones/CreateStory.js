@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../estilos/EstiloPerfil.css';
 
 const CreateStory = ({ onCreateStory }) => {
   
@@ -31,8 +32,9 @@ const CreateStory = ({ onCreateStory }) => {
 
   return (
     <div className="cstory_contenedor_0">
+    <div className="cstory_contenedor_1">
       <h2>Crear historia</h2>
-      <form className="cstory_contenedor_1" clas onSubmit={handleSubmit}>
+      <form className="cstory_contenedor_2" onSubmit={handleSubmit}>
           <p>Título:</p>
         <input type="text" value={title} onChange={handleTitleChange} />        
           <p>Descripción:</p>
@@ -46,6 +48,7 @@ const CreateStory = ({ onCreateStory }) => {
           </select>
         <button type="submit">Publicar</button>
       </form>
+    </div>
     </div>
   );
 };

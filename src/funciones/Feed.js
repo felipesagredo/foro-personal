@@ -18,6 +18,7 @@ function Feed(props) {
 
   return (
     <div className='feed_contenedor_0'>
+        <h2>Historias</h2>
         {stories}
         <button onClick={props.onLoadMore}>Ver más historias</button>
     </div>

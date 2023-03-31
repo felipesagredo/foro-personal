@@ -49,11 +49,18 @@ img {
     text-align: center;
     height: 30px;
 }
+
 .cstory_contenedor_0{
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    min-width: 80%;
+    display: flex;
     margin: auto;
+}
+
+
+.cstory_contenedor_1{
+    background-color: rgb(255, 255, 255);
+    margin: auto; 
+    width: 100%;
+    min-width: 80%;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -61,26 +68,27 @@ img {
     padding: 10px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.cstory_contenedor_0 h2{
+.cstory_contenedor_1 h2{
     text-align: center;
 }
 
-.cstory_contenedor_1{
-    background-color: aquamarine;
+.cstory_contenedor_2{
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 3fr 5fr; /* el primer elemento ocupará 1 parte, y el segundo ocupará 2 partes del grid */
     gap: 10px; /* espacio entre las columnas */
     width: 100%;
-    min-width: 150px;
+    min-width: 465px;
+    max-width: 465px;
     padding: 0;
     margin-bottom: 20px;
     
 }
-.cstory_contenedor_1 input{
+.cstory_contenedor_2 input{
     touch-action: manipulation;
     -ms-touch-action: manipulation;
 }
-.cstory_contenedor_1 textarea{
+.cstory_contenedor_2 textarea{
     resize: vertical;
     font-size: 16px;
     color: #333;
@@ -97,22 +105,27 @@ img {
     background-color: rgb(255, 255, 255);
 }
 .perfil_contenedor_0{
-    background-color: aqua;
-    width: 70%;
-    min-width: none;
+    background-color: rgb(255, 255, 255);
+    width: 485px;
+    min-width: 485px;
+    max-width: 485px;
     display: flex;
     margin: auto;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .perfil_contenedor_1{
-    background-color: rgb(141, 141, 141);
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    width: 70%;
+
+    width: 100%;
+    min-width: 80%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
-    box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.3);
 }
 .story_contenedor_1{
     background-color: rgb(53, 203, 244);   padding: 30px;

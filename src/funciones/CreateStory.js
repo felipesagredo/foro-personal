@@ -35,16 +35,15 @@ const CreateStory = ({ onCreateStory }) => {
     <div className="cstory_contenedor_1">
       <h2>Crear historia</h2>
       <form className="cstory_contenedor_2" onSubmit={handleSubmit}>
-          <p>Título:</p>
-        <input type="text" value={title} onChange={handleTitleChange} />        
-          <p>Descripción:</p>
           <textarea value={description} onChange={handleDescriptionChange} />
           <p>Imagen o video:</p>
           <input type="file" accept="image/*, video/*" onChange={handleImageChange} />
-          <p>Privacidad:</p>
+          <p>A quién va dirigido:</p>
           <select value={privacy} onChange={handlePrivacyChange}>
-            <option value="public">Público</option>
-            <option value="private">Privado</option>
+            <option className="option0" value="0">Selecciona una opción:</option>
+            <option className="option1" value="Todos">Público / Global</option>
+            <option className="option2" value="Amigos">Público / Amigos</option>
+            <option className="option3" value="Privado">Privado al Perfil</option>
           </select>
         <button type="submit">Publicar</button>
       </form>

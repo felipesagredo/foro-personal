@@ -2,7 +2,7 @@ import '../estilos/App.css';
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Feed from "./Feed";
-import Profile from "./Profile";
+import Perfil from "./Perfil";
 import Search from "./Search";
 import CreateStory from "./CreateStory";
 import Login from "./Login";
@@ -12,6 +12,7 @@ const App = () => {
 const [loggedIn, setLoggedIn] = useState(false);
 const [user, setUser] = useState(null);
 const [stories, setStories] = useState([]);
+const [seguidos, setSeguidos] = useState([]);
 
 const handleLogin = (username, password) => {
 // check username and password
@@ -34,6 +35,12 @@ const handleCreateStory = (newStory) => {
 setStories([...stories, newStory]);
 };
 
+const sumarSeguidores = (newSeguidos) => {
+ setSeguidos([...seguidos, newSeguidos + 1]);
+};
+
+
+
 return (
 <div>
   {loggedIn ? (
@@ -42,7 +49,6 @@ return (
         <Navbar/>
         <Search user={user} stories={stories} />
         <CreateStory onCreateStory={handleCreateStory} />
-        <Profile user={user} stories={stories} />
         <Feed user={user} stories={stories} />
       </div>
     </div>

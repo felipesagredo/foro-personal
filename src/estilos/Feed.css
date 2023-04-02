@@ -4,7 +4,7 @@
     max-width: 485px;
     display: flex;
     padding: 0;
-    
+    border-radius: 10px;
 }
 .feed_contenedor_1{
     width: 100%;
@@ -26,3 +26,16 @@
     width: 100%;
     padding: 0;
 }
+
+@media only screen and (max-width: 1024px) {
+
+    .feed_contenedor_0{
+      display: flex;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 100%;
+      min-width: 150px;
+      max-width: 100vw;
+      height: fit-content;
+    }   
+  }

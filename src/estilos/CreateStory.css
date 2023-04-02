@@ -1,70 +1,74 @@
 .cstory_contenedor_0{
     display: flex;
     margin: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .cstory_contenedor_1{
-    background-color: rgb(255, 255, 255);
     margin: auto; 
     width: 100%;
-    min-width: 80%;
+    min-width: 150px;
+    max-width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .cstory_contenedor_1 h2{
     text-align: center;
 }
 
 .cstory_contenedor_2{
-    background-color: rgba(255, 78, 78, 0);
     display: grid;
-    grid-template-columns: 1fr 3fr; /* el primer elemento ocupará 1 parte, y el segundo ocupará 2 partes del grid */
+    grid-template-columns: 1fr 2fr; /* el primer elemento ocupará 1 parte, y el segundo ocupará 2 partes del grid */
     gap: 0px; /* espacio entre las columnas */
     width: 100%;
-    min-width: 465px;
-    max-width: 465px;
+    min-width: 150px;
+    max-width: fit-content;
     padding: 0;
     margin-bottom: 20px;
     
 }
 .cstory_contenedor_2 input{
     margin: auto;
+    width: 100%;
     touch-action: manipulation;
     -ms-touch-action: manipulation;
     grid-column: 2;
-    background-color: rgb(235, 235, 235);
-    padding: 10px;
+    padding: 0px;
 }
 .cstory_contenedor_2 button{
     grid-column-end: span 2;
     color: rgb(0, 0, 0);
-    background-color: rgb(235, 235, 235);
+    background-color: #F7EFE5;
     border-radius: 3px;
     height: 50px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
 .cstory_contenedor_2 textarea{
     resize: vertical;
     font-size: 16px;
     color: #333;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 0px;
+    border: 2px solid #ccc;
+    width: 100%;
     height: auto;
     grid-column-end: span 2;
 }
 .cstory_contenedor_2 p{
     grid-column: 1;
-    background-color: rgb(255, 255, 255);
 }
 .cstory_contenedor_2 select{
     background-color: rgb(235, 235, 235);
     margin: auto;
     border-radius: 20px;
     height: 30px;
-    width: 200px;
+    width: fit-content;
     text-align: center;
     grid-column: 2;
 }
@@ -77,3 +81,17 @@
 .cstory_contenedor_2 .option3{
     background-color: rgba(58, 231, 130, 0.623);
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+    .cstory_contenedor_0{
+      display: flex;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 400px;
+      height: fit-content;
+    } 
+    
+  
+  }

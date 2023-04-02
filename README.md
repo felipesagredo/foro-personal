@@ -1,5 +1,3 @@
 # foro-personal
-Pagina para subir proyectos personales 
-
-# Api JSONPlaceholder
-Enlace: https://jsonplaceholder.typicode.com/
+Creando un proyecto de red social para subir tus Post y compartirlos con los demás.
+Proyecto realizado con metodos educacionales.

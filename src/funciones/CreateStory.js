@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import '../estilos/EstiloPerfil.css';
+import '../estilos/CreateStory.css';
 
 const CreateStory = ({ onCreateStory }) => {
   
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
-  const [privacy, setPrivacy] = useState("public");
+  const [privacy, setPrivacy] = useState("0");
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);

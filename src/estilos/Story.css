@@ -1,0 +1,18 @@
+.story_contenedor_0{
+    margin: auto;
+}
+.story_contenedor_1{
+    background-color: rgb(255, 255, 255); 
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.story_contenedor_1 img {
+    width: 100%;
+}

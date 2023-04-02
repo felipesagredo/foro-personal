@@ -1,0 +1,22 @@
+.perfil_contenedor_0{
+    background-color: rgba(255, 255, 255, 0);
+    
+    width: 485px;
+    min-width: 485px;
+    max-width: 485px;
+    display: flex;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.perfil_contenedor_1{
+    background-color: rgba(255, 255, 255, 0.516);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}

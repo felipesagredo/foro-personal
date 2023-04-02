@@ -1,0 +1,28 @@
+.feed_contenedor_0{
+    margin: auto;
+    width: 100%;
+    max-width: 485px;
+    display: flex;
+    padding: 0;
+    
+}
+.feed_contenedor_1{
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+
+}
+.feed_contenedor_1 h2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.feed_contenedor_2 {
+    margin: auto;
+    width: 100%;
+}
+.stories_1{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}

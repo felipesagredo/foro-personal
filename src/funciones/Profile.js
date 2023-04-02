@@ -1,4 +1,4 @@
-import '../estilos/EstiloPerfil.css';
+import '../estilos/Perfil.css';
 import React from 'react';
 import Feed from './Feed';
 

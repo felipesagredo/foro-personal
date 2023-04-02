@@ -1,4 +1,5 @@
 import React from 'react';
+import '../estilos/Navbar.css';
 
 function Navbar(props) {
   return (

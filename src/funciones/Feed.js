@@ -1,5 +1,5 @@
 import React from 'react';
-import '../estilos/EstiloPerfil.css';
+import '../estilos/Feed.css';
 import Story from './Story';
 
 function Feed(props) {
@@ -8,7 +8,8 @@ function Feed(props) {
     <div className='stories_1' key={story.id}> 
       <Story 
       key={story.id}
-      title={story.title} 
+      title={story.title}
+      user={story.user} 
       imageUrl={story.imageUrl} 
       description={story.description} 
       privacy={story.privacy}
@@ -18,9 +19,14 @@ function Feed(props) {
 
   return (
     <div className='feed_contenedor_0'>
-        <h2>Historias</h2>
-        {stories}
-        <button onClick={props.onLoadMore}>Ver más historias</button>
+      <div className='feed_contenedor_1'>
+        <div className='feed_contenedor_2'>
+
+          <h2>Feed de Historias</h2>
+          {stories}
+          <button onClick={props.onLoadMore}>Ver más historias</button>
+        </div>
+      </div>
     </div>
   );
 }

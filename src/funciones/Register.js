@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../estilos/App.css';
+import '../estilos/Register.css';
 
 
 const Register = ({ handleRegister }) => {

@@ -1,4 +1,4 @@
-import '../estilos/Header.css';
+import '../estilos/App.css';
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Feed from "./Feed";
@@ -37,20 +37,20 @@ setStories([...stories, newStory]);
 return (
 <div>
   {loggedIn ? (
-  <div className='app_contenedor_main_0'>
-  <div className='app_contenedor_main_1'>
-    <Navbar/>
-    <Search user={user} stories={stories} />
-    <CreateStory onCreateStory={handleCreateStory} />
-    <Profile user={user} stories={stories} />
-    <Feed user={user} stories={stories} />
-  </div>
-  </div>
-  ) : (
-  <div className='app_contenedor_login_register'>
-    <Login handleLogin={handleLogin} />
-    <Register handleRegister={handleRegister} />
-  </div>
+    <div className='app_contenedor_main_0'>
+      <div className='app_contenedor_main_1'>
+        <Navbar/>
+        <Search user={user} stories={stories} />
+        <CreateStory onCreateStory={handleCreateStory} />
+        <Profile user={user} stories={stories} />
+        <Feed user={user} stories={stories} />
+      </div>
+    </div>
+    ) : (
+    <div className='app_contenedor_login_register'>
+      <Login handleLogin={handleLogin} />
+      <Register handleRegister={handleRegister} />
+    </div>
   )}
 </div>
 );

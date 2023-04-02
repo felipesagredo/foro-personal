@@ -28,6 +28,10 @@ const CreateStory = ({ onCreateStory }) => {
     e.preventDefault();
     const story = { title, description, imageUrl, privacy };
     onCreateStory(story);
+    setDescription("");
+    setImageUrl("");
+    setTitle("");
+    setPrivacy(0);
   };
 
   return (

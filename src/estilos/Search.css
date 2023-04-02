@@ -1,0 +1,21 @@
+.search_contenedor_0{
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+.search_contenedor_1{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    
+}
+.search_contenedor_1 input{
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+}
+
